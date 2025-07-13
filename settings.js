@@ -13,7 +13,7 @@ function convertToBool(text, trueValue = 'true') {
 
 module.exports = {
   // ===== BOT CORE SETTINGS =====
-  SESSION_ID: process.env.SESSION_ID || "", // Your bot's session ID (keep secure)
+  SESSION_ID: process.env.SESSION_ID || "malvin~ZusSwSTZ#ODMN3aEhhyB7ZeIqHM_MgE5hnUkPYjcamC1PK2oqTwg", // Your bot's session ID (keep secure)
   PREFIX: getConfig("PREFIX") || ".", // Command prefix (e.g., ., /, !, *)
   CHATBOT: getConfig("CHATBOT") || "on", // Chatbot mode: on/off
   BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "ᴍᴀʟᴠɪɴ-xᴅ", // Bot display name
@@ -48,7 +48,7 @@ module.exports = {
   AUTO_STICKER: process.env.AUTO_STICKER || "false", // Auto-send stickers
 
   // ===== MEDIA & AUTOMATION =====
-  AUTO_RECORDING: process.env.AUTO_RECORDING || "false", // Auto-record voice notes
+  FAKE_RECORDING: process.env.FAKE_RECORDING || "true", // Auto-record voice notes
   AUTO_TYPING: process.env.AUTO_TYPING || "false", // Show typing indicator
   MENTION_REPLY: process.env.MENTION_REPLY || "false", // Reply when mentioned
   MENU_IMAGE_URL: getConfig("MENU_IMAGE_URL") || "https://files.catbox.moe/qumhu4.jpg", // Menu image URL
@@ -56,7 +56,7 @@ module.exports = {
   // ===== SECURITY & ANTI-FEATURES =====
   ANTI_DELETE: process.env.ANTI_DELETE || "true", // Recover deleted messages
   ANTI_CALL: process.env.ANTI_CALL || "false", // Automatically reject calls
-  ANTI_BAD_WORD: process.env.ANTI_BAD_WORD || "false", // Block bad words
+  ANTI_BAD: process.env.ANTI_BAD || "true", // Block bad words
   ANTI_LINK: process.env.ANTI_LINK || "true", // Block links in groups
   ANTI_VV: process.env.ANTI_VV || "true", // Block view-once messages
   DELETE_LINKS: process.env.DELETE_LINKS || "false", // Auto-delete links
